@@ -10,7 +10,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_19_164316) do
+ActiveRecord::Schema.define(version: 2020_02_27_151424) do
+
+  create_table "domains", force: :cascade do |t|
+    t.integer "authority_score"
+    t.integer "age"
+    t.integer "link"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "keywords", force: :cascade do |t|
+    t.string "name"
+    t.date "date"
+    t.integer "current_rank"
+    t.integer "initial_rank"
+    t.integer "previous_week_rank"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "propositions", force: :cascade do |t|
+    t.string "name"
+    t.string "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "domain_id_id"
+    t.integer "keyword_id_id"
+    t.index ["domain_id_id"], name: "index_propositions_on_domain_id_id"
+    t.index ["keyword_id_id"], name: "index_propositions_on_keyword_id_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -20,7 +49,9 @@ ActiveRecord::Schema.define(version: 2020_02_19_164316) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "proposition_id_id"
     t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["proposition_id_id"], name: "index_users_on_proposition_id_id"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 

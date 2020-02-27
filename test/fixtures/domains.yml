@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  authority_score: 1
+  age: 1
+  link: 1
+
+two:
+  authority_score: 1
+  age: 1
+  link: 1

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  date: 2020-02-27
+  current_rank: 1
+  initial_rank: 1
+  previous_week_rank: 1
+
+two:
+  name: MyString
+  date: 2020-02-27
+  current_rank: 1
+  initial_rank: 1
+  previous_week_rank: 1
