@@ -8,12 +8,15 @@ class DomainsController < ApplicationController
   end
 
   def destroy
+    @domain = Domain.find(domains_params)
+    @domain.destroy
+    redirect_to proposition_domains
   end
 end
 
 private
 
 def domain_params
-
+  params.require(:domain).permit(:authority_score, :age, :link)
 end
 
