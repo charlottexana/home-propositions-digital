@@ -7,4 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Proposition.create!
+Proposition.create!(
+  name: 'Landlord Lifeguard',
+  status: 'Live'
+)
+
+Proposition.create!(
+  name: 'Blink',
+  status: 'Pending'
+)

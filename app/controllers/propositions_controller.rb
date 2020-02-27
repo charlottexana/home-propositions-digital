@@ -5,7 +5,7 @@ class PropositionsController < ApplicationController
   end
 
   def show
-    @proposition = Proposition.new
+    @proposition = Proposition.find(params[:id])
   end
 
   def new
@@ -23,6 +23,7 @@ class PropositionsController < ApplicationController
 
   def update
     @proposition = Proposition.find(params[:id])
+    @proposition.update(proposition_params)
   end
 
   def destroy
