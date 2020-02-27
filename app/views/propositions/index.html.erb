@@ -1,3 +1,7 @@
 <h1>Welcome to the Home Propositions digital dashboard!</h1>
 
 <p>Coming soon :)</p>
+<p>The propositions we currently have in the pipeline are:</p>
+<% @propositions.each do |proposition| %>
+<li><%= proposition.name %>: <%= proposition.status %></li>
+<% end %>
