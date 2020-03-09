@@ -1,15 +1,20 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
-//
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, or any plugin's
-// vendor/assets/javascripts directory can be referenced here using a relative path.
-//
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// compiled file. JavaScript code in this file should be added after the last require_* statement.
-//
-// Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
-// about supported directives.
-//
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
+//= require_tree
+
+// require 'uri'
+// require 'net/http'
+// require 'openssl'
+
+// url = URI("https://dataforseo-dataforseo-rank-tracker-and-serp-v1.p.rapidapi.com/docs.dataforseo.com/")
+
+// http = Net::HTTP.new(url.host, url.port)
+// http.use_ssl = true
+// http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+
+// request = Net::HTTP::Get.new(url)
+// request["x-rapidapi-host"] = 'dataforseo-dataforseo-rank-tracker-and-serp-v1.p.rapidapi.com'
+// request["x-rapidapi-key"] = 'b016284af5msh34012b4c1b9c43dp171f75jsn4f6dcf240777'
+
+// response = http.request(request)
+// puts response.read_body

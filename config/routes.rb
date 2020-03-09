@@ -4,10 +4,10 @@ Rails.application.routes.draw do
 
   resources :propositions do #index #show #new/create #edit/update #delete
     resources :domains, only: [:index, :read, :update]
-  end
-
-  resources :propositions do #index #show #new/create #edit/update #delete
     resources :keywords, only: [:index, :show, :new, :create, :edit, :update, :destroy]
   end
+
+  # root to: 'keywords#index'
+  # get '/new' => 'keyword#new'
 
 end
