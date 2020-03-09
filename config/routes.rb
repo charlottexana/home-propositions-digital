@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     resources :keywords, only: [:index, :show, :new, :create, :edit, :update, :destroy]
   end
 
-  # root to: 'keywords#index'
-  # get '/new' => 'keyword#new'
+  root to: 'keywords#index'
+  get '/search' => 'keyword#search'
 
 end
