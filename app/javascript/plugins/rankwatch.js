@@ -1,6 +1,4 @@
-request.get('https://username.carto.com/endpoint/', {
-  'auth': {
-    'user': 'username',
-    'pass': 1234567890123456789012345678901234567890
-  }
-});
+console.log("hello there!");
+
+
+// https://github.com/charlottexana/fullstack-challenges/blob/master/04-Front-End/07-JavaScript-Plugins/03-Weather/lib/index.js
