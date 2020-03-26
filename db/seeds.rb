@@ -11,20 +11,22 @@ require 'open-uri'
 Proposition.destroy_all
 Keyword.destroy_all
 
-Proposition.create!(
+# @proposition = Proposition.create!(
+#   name: 'Landlord Lifeguard',
+#   status: 'Live',
+#   proposition_id: 1
+# )
+
+# @proposition.save
+
+@keyword = Keyword.create!(
   name: 'Landlord Lifeguard',
-  status: 'Live'
 )
 
-Proposition.create!(
-  name: 'Blink',
-  status: 'Pending'
+@keyword.save
+
+@keyword = Keyword.create!(
+  name: 'landlord advice',
 )
 
-Keyword.create!(
-  name: 'Landlord Lifeguard'
-)
-
-Keyword.create!(
-  name: 'landlord advice'
-)
+@keyword.save

@@ -1,3 +1,3 @@
 class Keyword < ApplicationRecord
-  belongs_to :proposition
+  # belongs_to :proposition
 end
