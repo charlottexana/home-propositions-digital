@@ -8,5 +8,7 @@
 <div id="keywords">
   Keyword 1
   Keyword 2
-
+<% @keywords.each do |keyword| %>
+<%= keyword.name %>
+<% end %>
 </div>

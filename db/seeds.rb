@@ -5,7 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'nokogiri'
+require 'open-uri'
 
+Proposition.destroy_all
+Keyword.destroy_all
 
 Proposition.create!(
   name: 'Landlord Lifeguard',
@@ -15,4 +19,12 @@ Proposition.create!(
 Proposition.create!(
   name: 'Blink',
   status: 'Pending'
+)
+
+Keyword.create!(
+  name: 'Landlord Lifeguard'
+)
+
+Keyword.create!(
+  name: 'landlord advice'
 )
