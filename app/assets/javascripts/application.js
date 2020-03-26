@@ -18,3 +18,26 @@
 
 // response = http.request(request)
 // puts response.read_body
+
+console.log("hello there!");
+
+const myKeyword = document.querySelector('#keyword');
+
+const getKeyword = (keyword) => {
+  myKeyword.innerHTML = "";
+};
+
+fetch('https://apiv2.rankwatch.com//project/detail/json/p_id/c581d4904d184a170420d904bc85791c/s_id/2.00426/')
+.then(response => response.json())
+.then((data) => {
+console.log(data);
+const myKeyword = (data.keyword);
+
+myKeyword();
+
+myKeyword(data);
+});
+
+console.log(getKeyword);
+
+// ${location.value}

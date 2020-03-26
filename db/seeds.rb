@@ -5,14 +5,28 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'nokogiri'
+require 'open-uri'
 
+Proposition.destroy_all
+Keyword.destroy_all
 
-Proposition.create!(
+# @proposition = Proposition.create!(
+#   name: 'Landlord Lifeguard',
+#   status: 'Live',
+#   proposition_id: 1
+# )
+
+# @proposition.save
+
+@keyword = Keyword.create!(
   name: 'Landlord Lifeguard',
-  status: 'Live'
 )
 
-Proposition.create!(
-  name: 'Blink',
-  status: 'Pending'
+@keyword.save
+
+@keyword = Keyword.create!(
+  name: 'landlord advice',
 )
+
+@keyword.save

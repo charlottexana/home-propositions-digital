@@ -4,3 +4,11 @@
         <div class="alert alert-warning"><%= flash[:alert] %></div>
       <% end %>
       <div class="mx-auto mt-5" style="width: 400px">
+
+<div id="keywords">
+  Keyword 1
+  Keyword 2
+<% @keywords.each do |keyword| %>
+<li><%= keyword.name %></li>
+<% end %>
+</div>
