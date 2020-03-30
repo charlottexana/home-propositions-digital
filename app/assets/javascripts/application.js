@@ -17,24 +17,29 @@ var settings = {
   },
 };
 
+console.log(settings);
 
-const myKeyword = document.querySelector('#keywords');
-
-const getKeyword = (keyword) => {
-  myKeyword.innerHTML = "landlord";
-};
-
-fetch('https://apiv2.rankwatch.com//project/detail/json/p_id/c581d4904d184a170420d904bc85791c/s_id/2.00426/')
-.then(response => response.json())
-.then((data) => {
-console.log(data);
-const newRanking = (data.keyword);
-
-getKeyword();
-
-getKeyword(data);
+$.ajax(settings).done(function (response) {
+  console.log(response);
 });
 
-console.log(myKeyword);
+// const myKeyword = document.querySelector('#keywords');
 
-// ${location.value}
+// const getKeyword = (keyword) => {
+//   myKeyword.innerHTML = "landlord";
+// };
+
+// fetch('https://apiv2.rankwatch.com//project/detail/json/p_id/c581d4904d184a170420d904bc85791c/s_id/2.00426/')
+// .then(response => response.json())
+// .then((data) => {
+// console.log(data);
+// const newRanking = (data.keyword);
+
+// getKeyword();
+
+// getKeyword(data);
+// });
+
+// console.log(myKeyword);
+
+// // ${location.value}
