@@ -8,20 +8,20 @@
 
 console.log("hello there!");
 
-var settings = {
-  "url": "https://apiv2.rankwatch.com//project/detail/json/p_id/c581d4904d184a170420d904bc85791c/s_id/2.00426/",
-  "method": "GET",
-  "timeout": 0,
-  "headers": {
-    "Authorization": "Basic cnctdjItMzg4NjktMjE5MTM6NmFiRHFUNzZSY1NI"
-  },
-};
+// var settings = {
+//   "url": "https://apiv2.rankwatch.com//project/detail/json/p_id/c581d4904d184a170420d904bc85791c/s_id/2.00426/",
+//   "method": "GET",
+//   "timeout": 0,
+//   "headers": {
+//     "Authorization": "Basic cnctdjItMzg4NjktMjE5MTM6NmFiRHFUNzZSY1NI"
+//   },
+// };
 
 
 const myKeyword = document.querySelector('#keywords');
 
 const getKeyword = (keyword) => {
-  myKeyword.innerHTML = "landlord";
+  myKeyword.innerHTML = "";
 };
 
 fetch('https://apiv2.rankwatch.com//project/detail/json/p_id/c581d4904d184a170420d904bc85791c/s_id/2.00426/')
