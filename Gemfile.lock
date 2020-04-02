@@ -160,6 +160,8 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     regexp_parser (1.7.0)
+    requirejs-rails (1.0.1)
+      railties (>= 3.1.1)
     responders (3.0.0)
       actionpack (>= 5.0)
       railties (>= 5.0)
@@ -244,6 +246,7 @@ DEPENDENCIES
   postman-ruby (~> 0.1.0)
   puma (~> 3.12)
   rails (~> 5.2.4, >= 5.2.4.1)
+  requirejs-rails
   sass-rails (~> 5.0)
   selenium-webdriver
   simple_form
