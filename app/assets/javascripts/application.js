@@ -6,10 +6,27 @@
 // require 'net/http'
 // require 'openssl'
 
-// import Requirejs-rails from 'typed.js;
 
 console.log("hello there!");
 
+
+// window.onload = (function(){getKeyword()});
+
+const myKeyword = document.querySelector('#keywords');
+
+const getKeyword = (keyword) => {
+  myKeyword.innerHTML = "";
+};
+
+
+fetch('https://app.zenserp.com/api/v2/search?apikey=700c9fe0-74fd-11ea-826c-03f7ed395182&q=landlord%20lifeguard&device=desktop&gl=GB&hl=en&location=United%20Kingdom')
+.then(response => response.json())
+.then((data) => {
+console.log(data);
+
+const newRanking = (data.organic[0].title);
+
+myKeyword.insertAdjacentHTML('beforeend', newRanking)});
 
 // const request = require('request');
 
@@ -22,19 +39,7 @@ console.log("hello there!");
 // }
 
 
-// const myKeyword = document.querySelector('#keywords');
-
-const getKeyword = (keyword) => {
-  // myKeyword.innerHTML = "";
-};
-
-fetch('https://app.zenserp.com/api/v2/search?apikey=700c9fe0-74fd-11ea-826c-03f7ed395182&q=landlord%20lifeguard&device=desktop&gl=GB&hl=en&location=United%20Kingdom')
-.then(response => response.json())
-.then((body) => {
-console.log(body);
-const newRanking = (body.keyword)});
-
-getKeyword();
+// getKeyword();
 
 // request(options, callback);
 
