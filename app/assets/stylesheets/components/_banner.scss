@@ -1,7 +1,7 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  padding: 120px 0;
   background-color: #374252;
 }
 
@@ -18,4 +18,24 @@
   color: white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+// .banner-flex {
+//   display: flex;
+//   // justify-content: space-between;
+//   flex-grow: 150;
+// }
+
+@media(max-width: 2500px) {
+.banner-flex {
+  display: flex;
+  justify-content: space-between;
+}
+}
+
+@media(max-width: 1000px) {
+.banner-flex {
+  display: flex;
+  flex-direction: column;
+}
 }

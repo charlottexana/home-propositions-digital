@@ -1,5 +1,3 @@
-
-
 class KeywordsController < ApplicationController
   def index
     @keywords = Keyword.all
