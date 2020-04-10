@@ -6,6 +6,11 @@
   align-items: center;
 }
 
+.card-contents {
+  display: flex;
+  flex-direction: column;
+}
+
 @media(max-width: 2500px) {
   .card-category {
     grid-template-columns: 1fr 1fr 1fr;
@@ -24,6 +29,7 @@
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     margin: 10px !important;
     padding: 10px;
+    background-color: #99BAB8;
   }
 }
 
@@ -45,5 +51,6 @@
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     margin: 10px;
     padding: 10px;
+    background-color: #99BAB8;
   }
 }
