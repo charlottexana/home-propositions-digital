@@ -1,2 +1,56 @@
-<h1>Domains#index</h1>
-<p>Find me in app/views/domains/index.html.erb</p>
+<div class="banner" style="">
+  <div class="container">
+    <div class="banner-flex">
+      <div>
+        <br>
+        <h1>Home Propositions <strong>Dashboard</strong></h1>
+        <p>Digital Progress and Metrics for Nationwide Building Society</p>
+        <a class="btn btn-flat" href="https://twitter.com/LLLifeguard">View Twitter Following</a>
+      </div>
+      <div>
+        <%= image_tag "mountain.png", width:"250px" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card-category" style="">
+          <div class="card-contents">
+            <%= image_tag "house.png", width:"50px" %>
+            <p>Landlord Lifeguard</p>
+            <%= link_to "View Keywords", keywords_path, class: "btn btn-dark" %>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-category" style="">
+          <div class="card-contents">
+            <%= image_tag "check.png", width:"50px" %>
+            <p>Landlord Finance</p>
+            <a class="btn btn-dark" href="#">View Keywords</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-category" style="">
+          <div class="card-contents">
+            <%= image_tag "house.png", width:"50px" %>
+            <p>Tenant Find</p>
+            <a class="btn btn-dark" href="#">View Keywords</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-category" style="">
+          <div class="card-contents">
+            <%= image_tag "house.png", width:"50px" %>
+            <p>MyHatch</p>
+            <a class="btn btn-dark" href="#">View Keywords</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

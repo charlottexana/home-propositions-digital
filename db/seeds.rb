@@ -1,8 +1,17 @@
 require 'nokogiri'
 require 'open-uri'
 
-Proposition.destroy_all
+# Proposition.destroy_all
 Keyword.destroy_all
+Domain.destroy_all
+
+@domain = Domain.create!(
+  age:'1',
+)
+
+@domain = Domain.create!(
+  age: '2',
+)
 
 @keyword = Keyword.create!(
   name: 'Landlord Lifeguard',
