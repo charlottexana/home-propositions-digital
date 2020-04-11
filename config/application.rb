@@ -17,6 +17,8 @@ require 'uri'
 require 'net/http'
 require 'openssl'
 
+config.assets.initialize_on_precompile = false
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
