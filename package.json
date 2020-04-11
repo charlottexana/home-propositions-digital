@@ -2,6 +2,7 @@
   "name": "home-propositions-digital",
   "private": true,
   "dependencies": {
+    "@rails/webpacker": "5.0.1",
     "bootstrap": "^4.4.1",
     "font-awesome": "^4.7.0",
     "requirejs": "^2.3.6"
