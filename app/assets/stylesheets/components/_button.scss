@@ -21,8 +21,10 @@
 }
 
 .btn-flat:hover {
-  background: #1BCB7F;
-  color: white;
+  background: #F0EBE4;
+  color: #374252;
+  opacity: 0.9;
+  transition: opacity 0.8s ease;
 }
 
 .btn-dark {
@@ -34,8 +36,10 @@
 }
 
 .btn-dark:hover {
-  background: #374252;
-  color: white;
+  background: #F0EBE4;
+  color: #374252;
+  opacity: 0.9;
+  transition: opacity 0.8s ease;
 }
 
 .btn-gradient {

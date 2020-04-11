@@ -6,8 +6,6 @@ Rails.application.routes.draw do
   resources :domains, only: [:index, :read, :update]
   resources :keywords, only: [:index, :show, :new, :create, :edit, :update, :destroy]
 
-
-
   root to: 'domains#index'
   get '/search' => 'keyword#search'
 
